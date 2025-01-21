@@ -8,7 +8,6 @@ module fr.msemna.tp_ihm {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
     opens fr.msemna.tp_ihm to javafx.fxml;
