@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
@@ -11,8 +13,8 @@
             <menus>
                 <Menu mnemonicParsing="false" text="Fichier">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Close" onAction="#handleClose" />
-                        <MenuItem mnemonicParsing="false" text="Import Photo" onAction="#handleImportPhoto" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleClose" text="Close" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleImportPhoto" text="Import Photo" />
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Edition">
@@ -27,6 +29,9 @@
                 </Menu>
             </menus>
         </MenuBar>
-        <Pane fx:id="albumPane" prefHeight="400.0" prefWidth="600.0" />
+        <Pane fx:id="albumPane">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin></Pane>
     </children>
 </VBox>
