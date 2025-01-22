@@ -14,7 +14,7 @@ public class AlbumApplication extends Application {
         try {
             // Charger le fichier FXML
             FXMLLoader fxmlLoader = new FXMLLoader(AlbumApplication.class.getResource("hello-view.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
+            Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
 
             // Titre de la fenêtre
             stage.setTitle("Album Photo - TP 2024");
